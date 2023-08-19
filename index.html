@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">SQUARE and CUBE</h1>
+        <form id="form-container">
+            <input  placeholder="Enter a number" id="input-number" type="number" required>
+            <button onclick="calculateResult()"  class="calc-btn">calculate</button>
+        </form>
+        <div class="result-container">
+            <div class="result">
+                <p>Square</p>
+                <p id="squared-result">?</p>
+            </div>
+            <div class="result">
+                <p>Cube</p>
+                <p id="cubed-result">?</p>
+            </div>
+        </div>
+        <div class="history-section">
+          <p>history</p>
+          <div id="history-container">
+
+          </div>
+          <div>
+            <button onclick="deleteLastEntry()" class="delete-btn">delete last entry</button>
+            <button onclick="clearHistory()" class="clear-btn">clear history</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
